@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+
+      <!--
+          Import Icon Fonts
+      -->
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+
+      <!--
+          Import Materialize
+      -->
+      <link rel="stylesheet" type="text/css"
+      href="materialize/css/materialize.css" media="screen,projection" />
+
+      <!--
+          Import Computer Modern Font
+      -->
+      <link rel="stylesheet" type="text/css"
+      href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+
+      <!--
+          Run Custom CSS
+          background-color: #fefce5;
+      -->
+
+      <style>
+          body {
+              background-color: #303030;
+              font-family: "Computer Modern Serif Roman", serif-roman;
+          }
+          .container {
+              margin-top: 5%;
+          }
+          h1 {
+              text-align: center;
+              color: #fefce5;
+          }
+          h2 {
+              text-align: center;
+              color: #fefce5;
+          }
+          h3 {
+              text-align: center;
+              color: #fefce5;
+          }
+          h4 {
+              color: #fefce5;
+          }
+          h5 {
+              color: #fefce5;
+          }
+          h6 {
+              color: #fefce5;
+          }
+          p {
+              text-align: justify;
+              color: #fefce5;
+              margin:0
+          }
+          ol {
+              color: #fefce5;
+          }
+          ul {
+              color: #fefce5;
+          }
+          li {
+              color: #fefce5;
+          }
+          .card {
+              margin-bottom: 5%;
+          }
+          img {
+              border-radius: 2px;
+          }
+          hr {
+              background: #adac9a;
+              border: 0;
+              height: 1px;
+              margin: 0px;
+          }
+          .table-of-contents a.active {
+              color: #e4e2cc;
+              border-left: 2px solid #e4e2cc;
+          }
+          .table-of-contents a:hover {
+              color: #cccab7;
+              border-left: 1px solid #cccab7;
+          }
+          .table-of-contents a {
+              color: #9c9c9c;
+          }
+          .tabs {
+              background-color: #303030;
+          }
+          .tabs .tab a {
+              color: #fefce5;
+          }
+          .tabs .tab a:hover {
+              color: #dbd9c3;
+          }
+          .tabs .tab a.active {
+              color: #fefce5;
+          }
+          .tabs .indicator {
+              background-color: #fefce5;
+          }
+          .tabs .tab a.active {
+              color: #fefce5;
+          }
+          .tabs .tab a.active:hover {
+              color: #dbd9c3;
+          }
+          .table {
+              color: #fefce5;
+          }
+          .footer{
+            color: #fefce5
+          }
+          .input-field input {
+            color: #fefce5;
+          }
+      </style>
+
+      <!--
+          Let the browser know the website is optimized for mobile
+      -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </header>
+
+    <body>
+<!--Start NAVBAR-->
+<nav>
+  <div class="nav-wrapper">
+    <div class="row">
+        <div class="col s0.5 m0.5 l0.5"></div>
+        <div class="col s12 m12 l12">
+          <a href="#!" class="brand-logo">Oliver Shetler</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="/">Home</a></li>
+  <li><a href="#footer">Condact</a></li>
+</ul>
+<!--End NAVBAR-->
+
+        <div class="row">
+
+        <div class="col s0.5 m1 l2 xl2"></div>
+
+        <div id="main-body" class="col s11 m7">
+
+          <div class="container" style="margin-top: 0pt">
+        <div id="bio" class="section scrollspy">
+            <h2 class="white-text">About Me</h2>
+<!--Profile Links-->
+          <div class="row" style="text-align: center;">
+            <a href="https://www.kaggle.com/olivershetler">
+              <i class="fab fa-kaggle"></i>
+              Kaggle
+            </a>
+            <a> &#8226; </a>
+            <a href="https://www.linkedin.com/in/olivershetler">
+              <i class="fa fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a> &#8226; </a>
+            <a href="https://www.github.com/olivershetler">
+              <i class="fa fa-github"></i>
+              GitHub
+            </a>
+          </div>
+<!--About Section-->
+            <div class="row">
+              <div class="col s12 m12 l6 xl6">
+                <img class="materialboxed" width="100%" style="padding-left: 0; padding-right: 1vh; padding-bottom: 1vh; padding-top: 1vh" src="main/img/profile-picture01.jpeg">
+              </div>
+            <p class="flow-text white-text" style="font-size: 2vh; margin: 0pt">
+              Hi, I'm Oliver. Welcome to my project portfolio!
+              I am a data scientist with a passion for the brain and cognitive sciences.
+              I hold a Masters in Statistics and Applied Mathematics (Summa Cum Laude, GPA 3.94/4.00) and a Bachelors in Statistics with a minor in Computer Science from Hunter College at the City University of New York (CUNY).
+              I am transitioning from a career as an executive at a small business and am currently seeking work.
+              Please <a href="#footer">email me</a> or connect with me on <a href="https://www.linkedin.com/in/olivershetler">LinkedIn</a> if there's anything I can help you with!
+            </p>
+          </div>
+        </div>
+
+
+
+<!--Skills Section-->
+        <div id="skills" class="section scrollspy">
+
+
+          <h2 class="white-text">Skills</h2>
+
+          <div class="row">
+            <div class="col s4">
+              <p class="flow-text"><b>Computer Languages</b></p>
+            </div>
+            <div class="col s0.5"></div>
+            <div class="col s7">
+              <p class="flow-text">
+                <div class="chip">Python</div>
+                <div class="chip">R</div>
+                <div class="chip">SQL</div>
+                <div class="chip">Matlab/Octave</div>
+                <div class="chip">SPSS</div>
+                <div class="chip">C++</div>
+                <div class="chip">HTML</div>
+                <div class="chip">CSS</div>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col s4">
+              <p class="flow-text"><b>Important Tools</b></p>
+            </div>
+            <div class="col s0.5"></div>
+            <div class="col s7">
+              <p class="flow-text">
+                <div class="chip">Keras</div>
+                <div class="chip">Tensorflow</div>
+                <div class="chip">GPT-3</div>
+                <div class="chip">Django</div>
+                <div class="chip">Postgres</div>
+                <div class="chip">Git</div>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col s4">
+              <p class="flow-text"><b>Software Tools</b></p>
+            </div>
+            <div class="col s0.5"></div>
+            <div class="col s7">
+              <p class="flow-text">
+                <div class="chip">
+                  Linux
+                </div>
+                <div class="chip">Excel</div>
+                <div class="chip">Powerpoint</div>
+                <div class="chip">Word</div>
+                <div class="chip">Photoshop/GIMP</div>
+                <div class="chip">Obsidian.md</div>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col s4">
+              <p class="flow-text"><b>Soft Skills</b></p>
+            </div>
+            <div class="col s0.5"></div>
+            <div class="col s7">
+              <p class="flow-text">
+                <div class="chip">Management</div>
+                <div class="chip">Presenting</div>
+                <div class="chip">Clear Writing</div>
+                <div class="chip">Timely Work</div>
+                <div class="chip">Knowledge Engineering</div>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+<!--Portfolio Section-->
+            <div id="portfolio" class="section scrollspy">
+              <h2 class="white-text">Project Portfolio</h2>
+                <img width="100%" style="border-bottom:1.5px solid #adac9a;"
+                src="main/img/portfolio-banner.jpeg">
+
+                <div class="row">
+                  <div class="col s6">
+                    <a href="#statistics">
+                      <h3 style="font-size: 3vh">
+                        Statistics & Statistical Learning
+                      </h3>
+                    </a>
+                  </div>
+                  <div class="col s6">
+                    <a href="#neural-networks">
+                    <h3  style="font-size: 3vh">
+                      Neural Networks & Deep Learning
+                    </h3>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <a href="#data-engineering">
+                    <h3  style="font-size: 3vh;">
+                      Data Engineering & SQL
+                    </h3>
+                  </a>
+                </div>
+            <hr>
+            </div>
+
+            <div id="statistics" class="section scrollspy">
+              <h3>Statistics and Statistical Learning</h3>
+            </div>
+
+            <h1>§</h1>
+
+            <div id="cat-cortex" class="section scrollspy">
+              <div class="row">
+                <h3><i>
+                  Profiling Neural Spike Trains From a Cat's Visual Cortex
+                </i></h3>
+                  <div class="row" style="text-align: center;">
+                    <a  class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;"
+                    href="https://github.com/olivershetler/cat-cortex/">
+                      <i class="fa-brands fa-github-square"></i> repository
+                    </a>
+                    <a class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;" href="https://github.com/olivershetler/cat-cortex/raw/main/article.pdf">
+                      <i class="fa-solid fa-file-arrow-down"></i> PDF article
+                    </a>
+                </div>
+                <div class="row">
+                  <div class="col s2">
+                    <p class="flow-text"><b>Tools</b></p>
+                  </div>
+                  <div class="col s0.5"></div>
+                  <div class="col s9">
+                    <p class="flow-text">
+                      <div class="chip">R</div>
+                      <div class="chip">Multinomial Regression</div>
+                      <div class="chip">Linear Discriminant Analysis</div>
+                      <div class="chip">Quadratic Discriminant Analysis</div>
+                      <div class="chip">K-Nearest-Neighbors</div>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2">
+                    <p class="flow-text"><b>Topics</b></p>
+                  </div>
+                  <div class="col s0.5"></div>
+                  <div class="col s9">
+                    <p class="flow-text">
+                      <div class="chip">Neural Coding</div>
+                      <div class="chip">Neural Spike Trains</div>
+                      <div class="chip">Point Processesg</div>
+                      <div class="chip">Brain Implants</div>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2">
+                    <p class="flow-text"><b>Brief</b></p>
+                  </div>
+                  <div class="col s0.5"></div>
+                  <div class="col s9">
+                    <p class="flow-text">
+                      This project explores how the idea of rate coding can help scientists decode neural spike trains from brain implants. It analyzes data from a cat's visual cortex and shows how the scale at which one averages signals over time can radically affect the performance of models.
+                    </p>
+                    <p class="flow-text" style="margin-top: 12pt">
+                      This project starts with pre-coded spike-trains. Neural spikes have to be detected and time-stamped before further analysis can proceed. I delivered two lectures on the topic of neural spike detection on YouTube. You can find Lecture I <a href="https://youtu.be/T8_zhkSNGGw">here</a> and Lecture II <a href="https://youtu.be/TNXZIePFmMo">here.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div id="seizures", class="section scrollspy">
+              <div class="row">
+                <h3><i>
+                  Detecting Seizures With EEG Time Series
+                </i></h3>
+                <div class="row" style="text-align: center;">
+                  <a  class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;"
+                  href="https://github.com/olivershetler/seizures/">
+                    <i class="fa-brands fa-github-square"></i> repository
+                  </a>
+                  <a class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;" href="https://github.com/olivershetler/seizures/raw/main/article.pdf">
+                    <i class="fa-solid fa-file-arrow-down"></i> PDF article
+                  </a>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Tools</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">Python</div>
+                    <div class="chip">R</div>
+                    <div class="chip">tsfresh</div>
+                    <div class="chip">Logistic Regression</div>
+                    <div class="chip">Multinomial Regression</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Topics</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">EEG</div>
+                    <div class="chip">Medicine</div>
+                    <div class="chip">Time Series</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Brief</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    This project compares and contrasts classical and machine learning oriented approaches to detecting seizures.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <hr>
+
+
+            <div id="neural-networks" class="section scrollspy">
+              <h3>Neural Networks</h3>
+            </div>
+
+            <h1>§</h1>
+
+
+            <div id="hygrip", class="section scrollspy">
+              <div class="row">
+                <h3><i>
+                  Predicting Human Grip Force from EEG, fNIRS and EMG Data With Deep Learning
+                </i></h3>
+                <div class="row" style="text-align: center;">
+                  <a  class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;"
+                  href="https://github.com/olivershetler/hygrip/">
+                    <i class="fa-brands fa-github-square"></i> repository
+                  </a>
+                  <a class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;" href="https://github.com/olivershetler/hygrip/raw/main/article.pdf">
+                    <i class="fa-solid fa-file-arrow-down"></i> PDF article
+                  </a>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Tools</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">Python</div>
+                    <div class="chip">Keras</div>
+                    <div class="chip">Tensorflow</div>
+                    <div class="chip">Transfer Learning</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Topics</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">EEG</div>
+                    <div class="chip">fNIRS</div>
+                    <div class="chip">EMG</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Brief</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    This project compares the performance neural network models that use EEG, fNIRS and EMG data for predicting muscular grip force time-series during an experiment. The models are hierarchically trained using transfer learning to reduce the cost of training.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+            <div id="tumors", class="section scrollspy">
+              <div class="row">
+                <h3><i>
+                  Tumor Detection with CNN Transfer Learning
+                </i></h3>
+                <div class="row" style="text-align: center;">
+                  <a  class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;"
+                  href="https://github.com/olivershetler/tumors/">
+                    <i class="fa-brands fa-github-square"></i> repository
+                  </a>
+                  <a class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;" href="https://github.com/olivershetler/tumors/raw/main/article.pdf">
+                    <i class="fa-solid fa-file-arrow-down"></i> PDF article
+                  </a>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Tools</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">Python</div>
+                    <div class="chip">Keras</div>
+                    <div class="chip">Xception</div>
+                    <div class="chip">Convolutional Neural Networksg</div>
+                    <div class="chip">Multinomial Regression</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Topics</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">MRI</div>
+                    <div class="chip">Image Processing</div>
+                    <div class="chip">Medicine</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Brief</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    This project deploys autoencoders and transfer learning to detect tumors in brain scans using the Xception neural network architecture.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <hr>
+
+            <div id="data-engineering" class="section scrollspy">
+              <h3>Data Engineering</h3>
+            </div>
+
+            <h1>§</h1>
+
+            <div id="pluto-database", class="section scrollspy">
+              <div class="row">
+                <h3><i>
+                  Engineering a Research Oriented Database from NYC Open Data PLUTO Data Sets
+                </i></h3>
+                <div class="row" style="text-align: center;">
+                  <a  class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;"
+                  href="https://github.com/olivershetler/pluto-database/">
+                    <i class="fa-brands fa-github-square"></i> repository
+                  </a>
+                  <a class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;" href="https://github.com/olivershetler/pluto-database/raw/main/article.pdf">
+                    <i class="fa-solid fa-file-arrow-down"></i> PDF article
+                  </a>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Tools</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">SQL</div>
+                    <div class="chip">Postgres</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Topics</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">Real Estate</div>
+                    <div class="chip">Housing</div>
+                    <div class="chip">Database</div>
+                    <div class="chip">Spatiotemporal Modeling</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Brief</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    This project crafts a research oriented database from the valueable but hard to work with PLUTO data sets. The final database enables researchers to make queries about trends in space and time, especially pertaining to residential buildings in the New York City area. Additionally, it produces tables that contain lagged longitudinal data on percent changes in building values per unit with four geo-spatial neighbors per record.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+            <div id="pluto-modeling", class="section scrollspy">
+              <div class="row">
+                <h3><i>
+                  Predicting NYC Lease Renewal Terms with PLUTO Panel Data
+                </i></h3>
+                <div class="row" style="text-align: center;">
+                  <a  class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;"
+                  href="https://github.com/olivershetler/pluto-modeling/">
+                    <i class="fa-brands fa-github-square"></i> repository
+                  </a>
+                  <a class="waves-effect waves-light btn" style="margin-top:1.5pt; margin-bottom:1.5pt;" href="https://github.com/olivershetler/pluto-modeling/raw/main/article.pdf">
+                    <i class="fa-solid fa-file-arrow-down"></i> PDF article
+                  </a>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Tools</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">Python</div>
+                    <div class="chip">Random Forests</div>
+                    <div class="chip">Boosted Trees</div>
+                    <div class="chip">Linear Regressions</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Topics</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    <div class="chip">Real Estate</div>
+                    <div class="chip">Housing</div>
+                    <div class="chip">Forecasting</div>
+                    <div class="chip">Spatiotemporal Modeling</div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s2">
+                  <p class="flow-text"><b>Brief</b></p>
+                </div>
+                <div class="col s0.5"></div>
+                <div class="col s9">
+                  <p class="flow-text">
+                    This project predicts lease renewal terms using percent changes in rental property values per unit as a proxy for rent prices. The data for this project were exported from a table in the PLUTO database from the previous project. The datasets for this project are available on my <a href="https://www.kaggle.com/datasets/olivershetler/pluto">Kaggle datasets page</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+           <!--
+            End of container
+          -->
+          </div>
+          <!--
+            End of main content
+          -->
+
+          </div>
+
+          <!--
+            Table of Contents
+          -->
+
+
+          <div class="col hide-on-small-only m4 l3 xl3">
+            <div class="toc-wrapper pin-top" style="top: 0px;">
+              <div style="height: 1px;">
+                <ul class="section table-of-contents">
+                  <li><a href="#bio"><b>About Me</b></a></li>
+                  <li><a href="#skills"><b>Skills</b></a></li>
+                  <li><a href='#portfolio'><b>Project Portfolio</b></a></li>
+                  <div class="row" style="margin: 0;">
+                  <div class="col s1"></div>
+                  <div class="col s11">
+                    <li><a href='#statistics'>Statistics & Statistical Learning</a></li>
+                    <div class="row" style="margin: 0;">
+                      <div class="col s1"></div>
+                      <div class="col s11">
+                      <li><a href='#cat-cortex'>Profiling Neural Spike Trains</a></li>
+                      <li><a href='#seizures'>Predicting Seizures With EEG</a></li>
+                      </div>
+                    </div>
+                    <li><a href='#neural-networks'><b>Neural Networks</b></a></li>
+                    <div class="row" style="margin: 0;">
+                      <div class="col s1"></div>
+                      <div class="col s11">
+                        <li><a href='#hygrip'>Deep Learning With EEG & fNIRS</a></li>
+                        <li><a href='#tumors'>Transfer Learning For Tumor Detection</a></li>
+                      </div>
+                    </div>
+                    <li><a href='#data-engineering'><b>Data Engineering</b></a></li>
+                    <div class="row" style="margin: 0;">
+                      <div class="col s1"></div>
+                      <div class="col s11">
+                        <li><a href='#pluto-database'>Real Estate Data Engineering</a></li>
+                        <li><a href='#pluto-modeling'>Predicting Lease Renewal Terms</a></li>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                <li><a href="#footer"><b>Contact Me</b></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+
+    </body>
+
+<!--
+    TO DO: Add a block that can be continuted by each specific page.
+           For example, each project article should include a proper citation example.
+
+           Also, look into how to embed a biblatex and other standard citation formats
+           for robots to grab through apps like zotero's browser extension.
+-->
+    <footer class="page-footer">
+      <div id="footer" class="section scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Let's Connect!</h5>
+                  <p class="white-text" style="font-size: 2vh">Send me an email using this form, or reach out on one of my profiles.</p>
+                  <!-- modify this form HTML and place wherever you want your form -->
+                  <form
+                  action="https://formspree.io/f/mpzbypvb"
+                  method="POST"
+                  >
+                  <label style="color:#fefce5">
+                    Your email:
+                    <input type="email" name="email" style="color:#fefce5">
+                  </label>
+                  <label style="color:#fefce5">
+                    Message:
+                    <textarea name="message" style="color:#fefce5; width:100%; height: 200pt">Dear Oliver,</textarea>
+                  </label>
+                  <!-- your other form fields go here -->
+                  <button type="submit">Send</button>
+                  </form>
+                </div>
+
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Find Me At</p>
+                  <ul>
+                    <li><a href="https://www.linkedin.com/in/olivershetler">
+                      <i class="fab fa-linkedin"></i>
+                      LinkedIn
+                    </a></li>
+                    <li><a href="https://www.github.com/olivershetler">
+                      <i class="fab fa-github-square"></i>
+                      GitHub
+                    </a></li>
+                    <li><a href="https://www.kaggle.com/olivershetler">
+                      <i class="fab fa-kaggle"></i>
+                         Kaggle
+                    </a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+            <div class="footer-copyright">
+              <div class="container">
+                © 2022 Oliver Shetler
+                <a class="grey-text text-lighten-4 right" href="#!">Index</a>
+              </div>
+            </div>
+      </div>
+
+
+
+<!-- JavaScript -->
+<!--
+    get jquery for shorthand javascript
+
+<script>
+if (!window.jQuery) { document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"><\/script>'); }
+</script>
+
+-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js">
+</script>
+
+<script type="text/javascript" src="materialize/js/bin/materialize.js"></script>
+
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+
+<script type="text/javascript", src="main/js/init.js"></script>
+
+<script src="https://kit.fontawesome.com/1a5d473820.js" crossorigin="anonymous"></script>
+
+    </footer>
+
+
+</html>
+
