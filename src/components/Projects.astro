@@ -1,0 +1,18 @@
+---
+import { projects } from '../data/projects';
+---
+
+<section class="content-section earlier-work" aria-labelledby="projects-label">
+  <p id="projects-label" class="section-label">Earlier work</p>
+  <p>Graduate and early-career projects, listed briefly for completeness.</p>
+  <p class="earlier-work__links">
+    {
+      projects.map((project, index) => (
+        <>
+          <a href={project.repo}>{project.title}</a>
+          {index < projects.length - 1 && <span aria-hidden="true"> · </span>}
+        </>
+      ))
+    }
+  </p>
+</section>

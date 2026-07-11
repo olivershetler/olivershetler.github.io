@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+tools/manim/.venv/
+tools/manim/media/
+tools/manim/__pycache__/
+tools/manim/scenes/__pycache__/

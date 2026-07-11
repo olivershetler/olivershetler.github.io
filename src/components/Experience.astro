@@ -1,0 +1,23 @@
+---
+import { education, experience } from '../data/experience';
+---
+
+<section class="content-section" aria-labelledby="experience-label">
+  <p id="experience-label" class="section-label">Track record</p>
+  <div class="experience-list">
+    {
+      experience.map((entry) => (
+        <article class="experience-item">
+          <header>
+            <h2>{entry.role}</h2>
+            <p>{entry.org} · {entry.period}</p>
+          </header>
+          <ul>
+            {entry.highlights.map((highlight) => <li>{highlight}</li>)}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+  <p class="education">{education}</p>
+</section>

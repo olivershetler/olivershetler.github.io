@@ -1,0 +1,39 @@
+---
+import { talks } from '../data/talks';
+---
+
+<section id="speaking" class="content-section" aria-labelledby="speaking-label">
+  <p id="speaking-label" class="section-label">Speaking</p>
+  <ol class="talk-list">
+    {
+      talks.map((talk) => (
+        <li class="talk-entry">
+          <article>
+            <h2><a href={talk.href}>{talk.title}</a></h2>
+            <p class="talk-meta">{talk.event} · {talk.location} · {talk.date}</p>
+            <p class="talk-blurb">{talk.blurb}</p>
+            {talk.animation && (
+              <figure class="publication-animation">
+                <video
+                  poster={talk.animation.poster}
+                  controls
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source src={talk.animation.src} type="video/mp4" />
+                </video>
+                <figcaption>{talk.animation.caption}</figcaption>
+              </figure>
+            )}
+          </article>
+        </li>
+      ))
+    }
+  </ol>
+  <p class="talk-booking">
+    Available for talks and panels on AI quality, risk, and the financial analysis of AI
+    systems. <a href="mailto:c.o.shetler@gmail.com?subject=Speaking%20inquiry">Book me to speak</a>.
+  </p>
+</section>

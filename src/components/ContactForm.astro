@@ -1,0 +1,27 @@
+---
+import { site } from '../data/site';
+
+const linkedIn = site.socials.find(({ label }) => label === 'LinkedIn')!;
+---
+
+<section id="contact" class="content-section" aria-labelledby="contact-label">
+  <p id="contact-label" class="section-label">Contact</p>
+  <p>
+    The best ways to reach me are the form below, <a href={linkedIn.href}>LinkedIn</a>, or <a href="mailto:c.o.shetler@gmail.com">email</a>.
+  </p>
+  <form class="contact-form" action={site.formspree} method="POST">
+    <input type="hidden" name="_subject" value="Website contact" />
+    <input type="hidden" name="_next" value="https://olivershetler.github.io/thanks/" />
+    <input class="visually-hidden" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" autocomplete="name" required />
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="7" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <nav class="contact-links" aria-label="Social links">
+    {site.socials.map((social) => <a href={social.href}>{social.label}</a>)}
+  </nav>
+</section>

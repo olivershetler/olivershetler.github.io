@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    text { fill: #1C1A17; }
+    @media (prefers-color-scheme: dark) { text { fill: #EDE6DA; } }
+  </style>
+  <text x="32" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="600">OS</text>
+</svg>

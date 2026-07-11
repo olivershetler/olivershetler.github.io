@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <h1 id="hero-title">Oliver Shetler</h1>
+  <div class="hero__rule"></div>
+  <p class="hero__tagline">AI quality, governance, and the financial analysis of AI systems.</p>
+  <p class="hero__subhead">
+    Founder of a startup currently in stealth. Before this I was the AI tech lead at NextGen Healthcare, where I shipped a production GenAI medical coding agent and helped found the company's AI governance program, and a research data scientist at Columbia University Medical Center.
+  </p>
+  <nav class="hero__links" aria-label="Profile links">
+    {site.socials.map((social) => <a href={social.href}>{social.label}</a>)}
+    <a href="#contact">Contact</a>
+  </nav>
+</section>

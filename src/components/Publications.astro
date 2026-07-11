@@ -1,0 +1,56 @@
+---
+import { publications } from '../data/publications';
+
+const orcid = 'https://orcid.org/0000-0001-7678-2000';
+const googleScholar = 'https://scholar.google.com/citations?hl=en&user=LhzwJfAAAAAJ';
+const splitShetlerAuthor = (authors: string) =>
+  authors.split(/(Shetler(?:\s+(?:CO|O)\*?)?)/g);
+---
+
+<section class="content-section content-section--wide publications" aria-labelledby="publications-label">
+  <p id="publications-label" class="section-label">Publications</p>
+  <p class="publication-record">
+    Full record on <a href={orcid}>ORCID</a> and <a href={googleScholar}>Google Scholar</a>.
+  </p>
+  <ol class="publication-list">
+    {
+      publications.map((publication) => (
+        <li class="publication-entry">
+          <div class="publication-meta">
+            <span class="publication-year">{publication.year}</span>
+            <span class:list={['publication-status', { 'publication-status--preprint': !publication.peerReviewed }]}>
+              {publication.peerReviewed ? 'Peer-reviewed' : 'Preprint'}
+            </span>
+          </div>
+          <div class="publication-body">
+            <p class="publication-citation">
+              <span class="publication-authors">
+                {splitShetlerAuthor(publication.authors).map((part) =>
+                  part.startsWith('Shetler') ? <strong>{part}</strong> : part,
+                )}
+              </span>.{' '}
+              <a href={publication.href}>{publication.title}</a>.{' '}
+              <em>{publication.venue}</em>.
+              {publication.note && <span class="publication-note"> {publication.note}.</span>}
+            </p>
+            {publication.animation && (
+              <figure class="publication-animation">
+                <video
+                  poster={publication.animation.poster}
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  controls
+                >
+                  <source src={publication.animation.src} type="video/mp4" />
+                </video>
+                <figcaption>{publication.animation.caption}</figcaption>
+              </figure>
+            )}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+</section>

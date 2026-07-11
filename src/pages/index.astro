@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Experience from '../components/Experience.astro';
+import Expertise from '../components/Expertise.astro';
+import Hero from '../components/Hero.astro';
+import Now from '../components/Now.astro';
+import Projects from '../components/Projects.astro';
+import Publications from '../components/Publications.astro';
+import Speaking from '../components/Speaking.astro';
+import WritingTeaser from '../components/WritingTeaser.astro';
+---
+
+<BaseLayout home>
+  <div class="page-shell">
+    <Hero />
+    <Now />
+    <Expertise />
+    <Experience />
+    <Speaking />
+    <Publications />
+    <Projects />
+    <WritingTeaser />
+    <ContactForm />
+  </div>
+</BaseLayout>

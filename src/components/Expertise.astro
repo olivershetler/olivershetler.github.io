@@ -1,0 +1,34 @@
+---
+const items = [
+  {
+    title: 'AI quality and evaluation',
+    body: 'Evaluation frameworks that connect benchmark metrics to production behavior. At NextGen Healthcare I designed the evaluation and monitoring standards for a GenAI medical coding agent, validated against 2,500 human-audited cases.',
+  },
+  {
+    title: 'AI governance',
+    body: "Governance that rests on engineering evidence rather than paperwork. As a founding member of NextGen's AI Governance Committee, I co-authored the review standards that set evidence requirements for production AI launches in a regulated healthcare environment.",
+  },
+  {
+    title: 'AI risk',
+    body: 'Model risk management in the tradition of SR 11-7, extended to modern AI systems. I read AI failures the way an actuary reads loss data: exposures to be identified, measured, and priced.',
+  },
+  {
+    title: 'Financial analysis of AI',
+    body: 'What an AI system is worth, measured in transactions, defects, and liabilities rather than accuracy scores, with uncertainty carried honestly through the analysis.',
+  },
+];
+---
+
+<section class="content-section" aria-labelledby="expertise-label">
+  <p id="expertise-label" class="section-label">What I work on</p>
+  <div class="expertise-grid">
+    {
+      items.map((item) => (
+        <article class="expertise-item">
+          <h2>{item.title}</h2>
+          <p>{item.body}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>
